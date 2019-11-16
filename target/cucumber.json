@@ -1,0 +1,126 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 77326500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksR.beforeScenarion(Scenario)"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Create New User",
+        "description": "",
+        "id": "cutomer-feature;create-new-user;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 338000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksR.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1168431900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I have JSON",
+            "match": {
+              "location": "CreateUser.i_have_JSON()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2744054800,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I send Post request",
+            "match": {
+              "location": "CreateUser.i_send_Post_request()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4755300,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I verify status code is 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 24
+                }
+              ],
+              "location": "ListUser.i_verify_status_code_is(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 551941200,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "response consists name \"appu\" and job \"QA\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"appu\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"QA\"",
+                  "offset": 38
+                }
+              ],
+              "location": "CreateUser.response_consists_name_and_job(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Reqres_API"
+          },
+          {
+            "name": "@CreateUser"
+          }
+        ]
+      }
+    ],
+    "name": "Cutomer_Feature",
+    "description": "  This feature is used to test dummy API",
+    "id": "cutomer-feature",
+    "keyword": "Feature",
+    "uri": "./src/test/Feature_FilesR/Reqres.feature",
+    "tags": [
+      {
+        "name": "@Reqres_API",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
